@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import "./found-pet-card-comp.css";
 
 export function FoundPetCardComp(props) {

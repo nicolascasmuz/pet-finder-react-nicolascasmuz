@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import { useNavigate } from "react-router-dom";
 import { ButtonComp } from "./ButtonComp";
 import "./sent-info-comp.css";

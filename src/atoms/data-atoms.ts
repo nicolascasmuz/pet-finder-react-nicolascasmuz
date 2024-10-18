@@ -3,6 +3,7 @@ import { atom, selector } from "recoil";
 function loadInitialState() {
   try {
     const localData = localStorage.getItem("saved-state");
+
     if (!localData) {
       return {
         userId: "",

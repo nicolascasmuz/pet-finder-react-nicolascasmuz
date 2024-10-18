@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FoundPetCardComp } from "../components/FoundPetCardComp";
 import { ReportedPetCardComp } from "../components/ReportedPetCardComp";
 import { Navigate } from "react-router-dom";

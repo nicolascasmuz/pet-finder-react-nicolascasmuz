@@ -1,10 +1,10 @@
 import React from "react";
 import { ButtonComp } from "../components/ButtonComp";
+import "./deleted-pet-page.css";
 import { Link } from "react-router-dom";
 import emptyPic from "../resources/picture-02.png";
-import "./deleted-pet-page.css";
 
-export function DeletedPetPage() {
+export function DeletedPetPage(props) {
   return (
     <div className="general-container">
       <h1 className="deleted-pet-main-title">El reporte ha sido eliminado</h1>

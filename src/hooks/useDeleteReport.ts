@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useSetRecoilState, useRecoilValueLoadable } from "recoil";
+import {
+  useSetRecoilState,
+  useRecoilValue,
+  useRecoilValueLoadable,
+} from "recoil";
+import { dataAtom, dataSelector } from "../atoms/data-atoms";
 import {
   deletedReportAtom,
   deletedReportSelector,
@@ -10,6 +15,8 @@ function useDeleteReport() {
   const navigate = useNavigate();
   const setDeletedReportState = useSetRecoilState(deletedReportAtom);
   const deletedReportLoadable = useRecoilValueLoadable(deletedReportSelector);
+  const setDataState = useSetRecoilState(dataAtom);
+  const stateData = useRecoilValue(dataSelector);
 
   useEffect(() => {
     if (

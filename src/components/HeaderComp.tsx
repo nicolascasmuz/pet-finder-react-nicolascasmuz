@@ -2,7 +2,7 @@ import React from "react";
 import "./header-comp.css";
 import petFinderLogo1 from "../resources/pet-finder-logo.png";
 
-export function HeaderComp() {
+export function HeaderComp(props) {
   return (
     <header className="header">
       <img

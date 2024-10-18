@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ButtonComp } from "../components/ButtonComp";
 import pinMap from "../resources/pin-map.png";
 import { Link } from "react-router-dom";

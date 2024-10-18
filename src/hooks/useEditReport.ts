@@ -1,7 +1,11 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useSetRecoilState, useRecoilValueLoadable } from "recoil";
-import { dataAtom } from "../atoms/data-atoms";
+import {
+  useSetRecoilState,
+  useRecoilValue,
+  useRecoilValueLoadable,
+} from "recoil";
+import { dataAtom, dataSelector } from "../atoms/data-atoms";
 import { editReportAtom, editReportSelector } from "../atoms/edit-report-atoms";
 
 function useEditReport() {
@@ -9,6 +13,7 @@ function useEditReport() {
   const setEditReportState = useSetRecoilState(editReportAtom);
   const editReportLoadable = useRecoilValueLoadable(editReportSelector);
   const setDataState = useSetRecoilState(dataAtom);
+  const stateData = useRecoilValue(dataSelector);
 
   useEffect(() => {
     if (

@@ -7,10 +7,6 @@ import mapboxgl from "mapbox-gl";
 import { SetRadiusFormComp } from "./SetRadiusFormComp";
 import "./map-comp.css";
 
-const MAPBOX_TOKEN =
-  "pk.eyJ1Ijoibmljb2xhc2Nhc211eiIsImEiOiJjbGlnazg2cjExZTdvM21tcWl6eGU5bDM0In0.EtaC4N7nb_NuwfddaKZaow";
-mapboxgl.accessToken = MAPBOX_TOKEN;
-
 function MapComp() {
   const { petsByRadius } = usePetsByRadius();
   const { selectMissingPet } = useSelectedPet();

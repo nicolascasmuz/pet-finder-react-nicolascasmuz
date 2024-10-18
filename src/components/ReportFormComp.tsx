@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import { ButtonComp } from "./ButtonComp";
 import "./report-form-comp.css";
 

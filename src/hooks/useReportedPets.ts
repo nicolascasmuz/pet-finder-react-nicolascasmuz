@@ -1,6 +1,10 @@
-import { useEffect } from "react";
-import { useSetRecoilState, useRecoilValueLoadable } from "recoil";
-import { dataAtom } from "../atoms/data-atoms";
+import React, { useEffect } from "react";
+import {
+  useSetRecoilState,
+  useRecoilValue,
+  useRecoilValueLoadable,
+} from "recoil";
+import { dataAtom, dataSelector } from "../atoms/data-atoms";
 import {
   reportedPetsAtom,
   reportedPetsSelector,
@@ -10,6 +14,7 @@ function useReportedPets() {
   const setReportedPetsState = useSetRecoilState(reportedPetsAtom);
   const reportedPetsLoadable = useRecoilValueLoadable(reportedPetsSelector);
   const setDataState = useSetRecoilState(dataAtom);
+  const stateData = useRecoilValue(dataSelector);
 
   useEffect(() => {
     if (

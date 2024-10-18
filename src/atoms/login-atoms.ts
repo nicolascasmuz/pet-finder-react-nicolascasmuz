@@ -1,8 +1,6 @@
 import { atom, selector } from "recoil";
 import { API_BASE_URL } from "../API_BASE_URL";
 
-console.log("API_BASE_URL: ", API_BASE_URL);
-
 const authAtom = atom({
   key: "auth-atom",
   default: {

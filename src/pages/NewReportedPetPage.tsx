@@ -4,7 +4,7 @@ import "./new-reported-pet-page.css";
 import { Link } from "react-router-dom";
 import missingPetPic from "../resources/missing-pet.png";
 
-export function NewReportedPetPage() {
+export function NewReportedPetPage(props) {
   return (
     <div className="general-container">
       <h1 className="new-reported-pet-main-title">
